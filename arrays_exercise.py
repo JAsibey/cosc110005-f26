@@ -38,6 +38,11 @@ while True:
         if grades[2] < 0 or grades[2] > 100:
             print("Please type in an answer higher than 100 and lower than 0.")  
 
+#This prints out the grades of the user to the console.
+print("Your pre class activities grade is: ", grades[0])
+print("Your mid term grade is: ", grades[1])
+print("Your class exercise grade is: ", grades[2])
+
 #This gets the sum of the grades and divides it by the length of the array to get the average of the grades and prints it out to the user to get their final GPA.
 grades_average = sum(grades) / len(grades)
 print(f"Your GPA is: {grades_average:.2f}%")         
