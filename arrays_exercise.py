@@ -45,6 +45,11 @@ print("Your class exercise grade is: ", grades[2])
 
 #This gets the sum of the grades and divides it by the length of the array to get the average of the grades and prints it out to the user to get their final GPA.
 grades_average = sum(grades) / len(grades)
+if grades_average > 100:
+    grades_average = 100
+elif grades_average < 0:
+    grades_average = 0
+    
 print(f"Your GPA is: {grades_average:.2f}%")         
 
 
